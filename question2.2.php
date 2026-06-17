@@ -1,3 +1,4 @@
+abcd
 <?php
 // lien question3.1
 include("fonction.php");
