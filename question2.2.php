@@ -1,3 +1,4 @@
+salut camille
 <?php
 // lien question3.1
 include("fonction.php");
@@ -8,7 +9,7 @@ $emploi = get_emploi_employee($id_emp);
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"  href="bootstrap/css/bootstrap.min.css">
