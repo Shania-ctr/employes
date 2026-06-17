@@ -124,5 +124,15 @@ function get_formulaire_lien($dep , $nom_emp , $prenom_emp , $age_min , $age_max
     return $result;
 }
 
+function get_count_emp_par_sex($sex){
+    $sql ="SELECT count(emp_no) as nombre FROM employees where gender = '$sex'";
+    $users_req = mysqli_query(dbconnect(), $sql);
+    $result = array();
+    while ($user = mysqli_fetch_assoc($users_req)) {
+        $result[] = $user;
+    }
+    mysqli_free_result($users_req);
+    return $result;
+}
 
 ?>

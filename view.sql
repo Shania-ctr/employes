@@ -16,3 +16,6 @@ SELECT * FROM v_employe where Num_emp = '10012'group by emploi;
 create or replace view v_liste_employee as SELECT * from v_employe where `Num_dep` = 'd005' group by `Num_emp`;
 SELECT count(`Num_emp`) from v_liste_employee;
 SELECT count(dept_no) FROM dept_emp where  dept_no = 'd005';
+select count(emp_no) from employees WHERE gender = 'M';
+select count(emp_no) from employees WHERE gender = 'F';
+select titles.title , AVG(salaries.salary) as moyenne from titles  join salaries on titles.emp_no = salaries.emp_no GROUP BY title;
