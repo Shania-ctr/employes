@@ -1,5 +1,6 @@
+klmn
 <?php
-// lien question3.1
+//lien question3.1
 include("fonction.php");
 $id_emp = $_GET['num_emp'];
 $emp = get_employee($id_emp);
